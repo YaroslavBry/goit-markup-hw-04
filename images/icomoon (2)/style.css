@@ -1,0 +1,68 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-benefit1 {
+  width: 0.9423828125em;
+}
+
+.icon-benefit2 {
+  width: 0.9716796875em;
+}
+
+.icon-benefit3 {
+  width: 1.2958984375em;
+}
+
+.icon-companylogo1 {
+  width: 0.8720703125em;
+}
+
+.icon-companylogo2 {
+  width: 1.142578125em;
+}
+
+.icon-companylogo3 {
+  width: 1.0712890625em;
+}
+
+.icon-companylogo4 {
+  width: 2.0234375em;
+}
+
+.icon-companylogo5 {
+  width: 1.3408203125em;
+}
+
+.icon-companylogo6 {
+  width: 2.0888671875em;
+}
+
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
+.icon-fb {
+  width: 0.5498046875em;
+}
+
+.icon-tel {
+  width: 0.625em;
+}
+
+.icon-twitter {
+  width: 1.111328125em;
+}

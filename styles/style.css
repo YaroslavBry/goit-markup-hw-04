@@ -92,6 +92,8 @@ img {
 
 /* ------------Стилизация HEADER------------ */
 
+
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -137,6 +139,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+
+
 
 /* --------шапка HEADER сайта-------- */
 
@@ -196,6 +200,15 @@ img {
 .site-contact:hover,
 .site-contant:focus {
   color: var(--accent-color);
+}
+
+.icon {
+display: flex;
+padding: 0;
+margin-right: 10px;
+outline: 1px solid red;
+width: 16px;
+height: 12px;
 }
 
 /* ---------------Стилизация ГЕРОЯ (БАНЕР)--------------- */
@@ -283,7 +296,7 @@ padding: 200px 0px;
   margin-bottom: 10px;
 }
 
-.benefit-title::before {
+/* .benefit-title::before {
   content: "";
   display: block;
   width: 270px;
@@ -294,7 +307,7 @@ padding: 200px 0px;
   background-image: url(/images/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 65 px 70px;
+  background-size: 65 px 70px; */
   /* outline: 1px solid black; */
 }
 
@@ -309,19 +322,21 @@ padding: 200px 0px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 270px;
 }
 
-
-
-/* .befefit-back {
+.befefit-back {
   display: block;
   width: 270px;
   height: 120px;
   background-color: var(--background-color-lightgrey);
   border-radius: 4px;
   margin-bottom: 30px;
-  outline: 1px solid black;
-} */
+  background-image: url(../images/benefit1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+} 
 
 .list {
   color: var(--primaty-text-color);
@@ -414,6 +429,36 @@ padding: 200px 0px;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   text-align: center;
+}
+
+/* ------------Постойнные клиенты------------- */
+
+.customers-head {
+  margin-bottom: 50px;
+}
+
+.customers {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.customers-logo{
+  
+/* display: block;
+  justify-content: space-between; */
+width: 170px;
+height: 92px;
+border-radius: 4px;
+border: 1px solid #AFB1B8;
+/* background-color: #757575; */
+
+}
+
+
+.companylogo1 {
+  width: 106px;
+height: 60px;
 }
 
 /* ------------Стилизация футера------------- */
