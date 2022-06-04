@@ -15,6 +15,14 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
+.icon-tel {
+  width: 0.625em;
+}
+
 .icon-benefit1 {
   width: 0.9423828125em;
 }
@@ -27,42 +35,34 @@ Single-colored icons can be modified like so:
   width: 1.2958984375em;
 }
 
-.icon-companylogo1 {
-  width: 0.8720703125em;
+.icon-logo-company1 {
+  width: 1.7666015625em;
 }
 
-.icon-companylogo2 {
-  width: 1.142578125em;
+.icon-logo-company2 {
+  width: 1.7666015625em;
 }
 
-.icon-companylogo3 {
-  width: 1.0712890625em;
+.icon-logo-company3 {
+  width: 1.7666015625em;
 }
 
-.icon-companylogo4 {
-  width: 2.0234375em;
+.icon-logo-company4 {
+  width: 1.7666015625em;
 }
 
-.icon-companylogo5 {
-  width: 1.3408203125em;
+.icon-logo-company5 {
+  width: 1.7666015625em;
 }
 
-.icon-companylogo6 {
-  width: 2.0888671875em;
-}
-
-.icon-envelope {
-  width: 1.3330078125em;
-}
-
-.icon-fb {
-  width: 0.5498046875em;
-}
-
-.icon-tel {
-  width: 0.625em;
+.icon-logo-company6 {
+  width: 1.7666015625em;
 }
 
 .icon-twitter {
   width: 1.111328125em;
+}
+
+.icon-fb {
+  width: 0.5498046875em;
 }

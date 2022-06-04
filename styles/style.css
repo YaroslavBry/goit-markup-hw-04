@@ -96,8 +96,6 @@ img {
 
 /* ------------Стилизация HEADER------------ */
 
-
-
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -144,8 +142,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-
-
 /* --------шапка HEADER сайта-------- */
 
 .nav-list {
@@ -185,7 +181,6 @@ img {
 }
 
 .site-contact {
-
   font-family: Roboto, sans-serif;
   display: flex;
   text-decoration: none;
@@ -199,8 +194,7 @@ img {
   margin-left: auto;
   align-items: center;
   height: 80px;
-  
- }
+}
 
 .site-contact .site-contact-item + .site-contact-item {
   margin-left: 50px;
@@ -209,15 +203,17 @@ img {
 .site-contact:hover,
 .site-contant:focus {
   color: var(--accent-color);
-  
 }
 
 .icon {
-height: 80px;
-margin-right: 10px;
-align-content: center;
+  height: 80px;
+  margin-right: 10px;
+  align-content: center;
 }
 
+.icon:hover {
+  fill: var(--accent-color);
+}
 
 /* ---------------Стилизация ГЕРОЯ (БАНЕР)--------------- */
 
@@ -225,21 +221,11 @@ align-content: center;
   max-height: 600px;
   max-width: 1600px;
   margin: 0 auto;
-  background-image: linear-gradient(
-        to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(/images/heroback.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/heroback.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /* border-style: cover; */
-/* background-color: var(--background-color-dark); */
-padding: 200px 0px;
-}
-
-
-/* .section-hero {
   padding: 200px 0px;
-} */
+}
 
 .team-background {
   background-color: var(--background-color-lightgrey);
@@ -277,14 +263,9 @@ padding: 200px 0px;
 
 /* ----------------BENEFITS---------------- */
 
-/* .container.benefit {
-  /* margin-top: 93px; */
-} */
-
-
-.benefit {
+/* .benefit {
   margin-top: 94px;
-}
+} */
 
 .benefit-list {
   margin: 0;
@@ -315,9 +296,10 @@ padding: 200px 0px;
   background-image: url(/images/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 65 px 70px; */
-  /* outline: 1px solid black; */
-}
+  background-size: 65 px 70px; 
+   outline: 1px solid black; 
+} 
+*/
 
 .benefit-item {
   max-width: 260px;
@@ -340,26 +322,26 @@ padding: 200px 0px;
   background-color: var(--background-color-lightgrey);
   border-radius: 4px;
   margin-bottom: 30px;
-  
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70px 70px;
-} 
+}
 
 .befefit-back.antenna {
-background-image: url(../images/benefit1.svg);
+  background-image: url(../images/benefit1.svg);
 }
 
 .befefit-back.clock {
-background-image: url(../images/benefit2.svg);
+  background-image: url(../images/benefit2.svg);
 }
 
 .befefit-back.laptop {
-background-image: url(../images/benefit3.svg);
+  background-image: url(../images/benefit3.svg);
 }
 
 .befefit-back.astronaut {
-background-image: url(../images/benefit4.svg);
+  background-image: url(../images/benefit4.svg);
 }
 
 .list {
@@ -386,7 +368,7 @@ background-image: url(../images/benefit4.svg);
 
 .whatwedo-list {
   margin: 0;
-  
+
   display: flex;
   justify-content: space-between;
 }
@@ -451,8 +433,41 @@ background-image: url(../images/benefit4.svg);
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
+}
+
+.team-contacts {
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.icon-team {
+  /* width: 20px;
+  height: 20px; */
+  fill: #afb1b8;
+  padding: 12px;
+}
+
+.icon-team:hover {
+  fill: #ffffff;
+}
+
+.team-links {
+  width: 44px;
+  height: 44px;
+  /* border: 50%; */
+  /* align-items: center; */
+  /* background-color: rgba(221, 221, 221, 0.5); */
+}
+
+.team-links:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  fill: #ffffff;
 }
 
 /* ------------Постойнные клиенты------------- */
@@ -467,18 +482,25 @@ background-image: url(../images/benefit4.svg);
   margin: 0;
 }
 
-.customers-logo{
+/* .customers-logo{
 width: 170px;
 height: 92px;
-border-radius: 4px;
-border: 1px solid #AFB1B8;
-}
+
+} */
 
 .icon-client {
-width: 41px;
-height: 47px;
-fill: #2196f3;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  padding: 16px 32px;
+  fill: #afb1b8;
+}
 
+.icon-client:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* ------------Стилизация футера------------- */
@@ -542,7 +564,7 @@ fill: #2196f3;
 }
 
 .portfolio-li {
-margin-right: 8px;
+  margin-right: 8px;
 }
 
 .radiobutton-portfolio {
@@ -556,7 +578,7 @@ margin-right: 8px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-    border: 0px;
+  border: 0px;
   border-radius: 4px;
 }
 
@@ -607,7 +629,7 @@ margin-right: 8px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  }
+}
 
 .portfolio-description {
   font-family: Roboto, sans-serif;
