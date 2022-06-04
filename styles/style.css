@@ -54,6 +54,10 @@ p {
   padding-left: 0;
 }
 
+/* a {
+  margin: 0;
+} */
+
 img {
   display: block;
 }
@@ -181,6 +185,7 @@ img {
 }
 
 .site-contact {
+
   font-family: Roboto, sans-serif;
   display: flex;
   text-decoration: none;
@@ -189,8 +194,12 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 0;
   margin: 0;
   margin-left: auto;
+  align-items: center;
+  height: 80px;
+  
  }
 
 .site-contact .site-contact-item + .site-contact-item {
@@ -200,16 +209,15 @@ img {
 .site-contact:hover,
 .site-contant:focus {
   color: var(--accent-color);
+  
 }
 
 .icon {
-display: flex;
-padding: 0;
+height: 80px;
 margin-right: 10px;
-outline: 1px solid red;
-width: 16px;
-height: 12px;
+align-content: center;
 }
+
 
 /* ---------------Стилизация ГЕРОЯ (БАНЕР)--------------- */
 
@@ -332,11 +340,27 @@ padding: 200px 0px;
   background-color: var(--background-color-lightgrey);
   border-radius: 4px;
   margin-bottom: 30px;
-  background-image: url(../images/benefit1.svg);
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70px 70px;
 } 
+
+.befefit-back.antenna {
+background-image: url(../images/benefit1.svg);
+}
+
+.befefit-back.clock {
+background-image: url(../images/benefit2.svg);
+}
+
+.befefit-back.laptop {
+background-image: url(../images/benefit3.svg);
+}
+
+.befefit-back.astronaut {
+background-image: url(../images/benefit4.svg);
+}
 
 .list {
   color: var(--primaty-text-color);
@@ -444,21 +468,17 @@ padding: 200px 0px;
 }
 
 .customers-logo{
-  
-/* display: block;
-  justify-content: space-between; */
 width: 170px;
 height: 92px;
 border-radius: 4px;
 border: 1px solid #AFB1B8;
-/* background-color: #757575; */
-
 }
 
+.icon-client {
+width: 41px;
+height: 47px;
+fill: #2196f3;
 
-.companylogo1 {
-  width: 106px;
-height: 60px;
 }
 
 /* ------------Стилизация футера------------- */
