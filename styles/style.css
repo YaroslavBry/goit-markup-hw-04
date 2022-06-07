@@ -9,9 +9,9 @@
   --background-color-lightgrey: #f5f4fa;
 }
 
-html {
+/* html {
   box-sizing: border-box;
-}
+} */
 
 *,
 *::before. *::after {
@@ -21,7 +21,6 @@ html {
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  /* width: 1600px; */
 }
 
 h2 {
@@ -53,10 +52,6 @@ p {
   margin: 0 0;
   padding-left: 0;
 }
-
-/* a {
-  margin: 0;
-} */
 
 img {
   display: block;
@@ -206,6 +201,7 @@ img {
 }
 
 .icon {
+  /* display: inline-block; */
   height: 80px;
   margin-right: 10px;
   align-content: center;
@@ -214,6 +210,11 @@ img {
 .icon:hover {
   fill: var(--accent-color);
 }
+
+/* .site-contact-hover:hover {
+  color: var(--accent-color);
+  fill: #2196f3;
+} */
 
 /* ---------------Стилизация ГЕРОЯ (БАНЕР)--------------- */
 
@@ -283,6 +284,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  /* text-decoration: none; */
 }
 
 /* .benefit-title::before {
@@ -352,6 +354,22 @@ img {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+}
+
+.befefit-block {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-color-lightgrey);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-antena {
+  /* fill: #000000; */
+  /* align-content: center; */
 }
 
 /* ----------------WHAT WE DO---------------- */
@@ -437,37 +455,45 @@ img {
   text-align: center;
 }
 
-.team-contacts {
+.social-media-container {
   display: flex;
-  margin-left: 32px;
+  height: 44px;
+  width: 206px;
   margin-right: 32px;
+  margin-left: 32px;
   margin-bottom: 30px;
   justify-content: space-between;
 }
 
-.icon-team {
-  /* width: 20px;
-  height: 20px; */
-  fill: #afb1b8;
-  padding: 12px;
-}
-
-.icon-team:hover {
-  fill: #ffffff;
-}
-
-.team-links {
+.social-media-link {
   width: 44px;
-  height: 44px;
-  /* border: 50%; */
-  /* align-items: center; */
-  /* background-color: rgba(221, 221, 221, 0.5); */
+  background-color: rgb(187, 133, 133);
 }
 
-.team-links:hover {
-  background-color: var(--accent-color);
+/* ------------2-------------- */
+.team-contacts {
+}
+
+.team-list {
+  list-style: none;
+}
+
+.team-item {
+  background-color: rgb(133, 194, 92);
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
   border-radius: 50%;
-  fill: #ffffff;
+}
+
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-icon {
+  display: block;
 }
 
 /* ------------Постойнные клиенты------------- */
@@ -481,12 +507,6 @@ img {
   justify-content: space-between;
   margin: 0;
 }
-
-/* .customers-logo{
-width: 170px;
-height: 92px;
-
-} */
 
 .icon-client {
   border-radius: 4px;
@@ -546,6 +566,78 @@ height: 92px;
 
 .list-mail-footer {
   margin-bottom: 9px;
+}
+
+.footer-join {
+  height: 80px;
+  width: 206px;
+  outline: 1px solid teal;
+  margin-top: 72px;
+  margin-left: 70px;
+}
+
+.footer-head {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+}
+
+.footer-icons {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 44px;
+  width: 44px;
+  /* justify-content: space-between; */
+}
+
+/* .footer-icons .li {
+  background-color: rgba(247, 76, 76, 0.5);
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+} */
+
+.footer-links {
+  display: flex;
+  margin: 0;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  /* height: 44px;
+  width: 44px; */
+}
+
+.footer-icon {
+  display: block;
+  align-items: baseline;
+  fill: var(--white-text-color);
+}
+
+.footer-join-li {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+  outline: 1px solid teal;
+}
+
+.footer-icons li {
+  margin-right: 10px;
 }
 
 /* ----------СТИЛИЗАЦИЯ СТРАНИЧКИ ПОРТФОЛИО----------- */
