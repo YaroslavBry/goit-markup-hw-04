@@ -83,6 +83,7 @@ img {
 
 .list {
   list-style: none;
+  margin-bottom: 0;
 }
 
 /* ------------Стилизация HEADER------------ */
@@ -171,9 +172,17 @@ img {
   color: var(--accent-color);
 }
 
-.site-contact {
-  font-family: Roboto, sans-serif;
+.site-con {
   display: flex;
+  text-decoration: none;
+  margin-left: auto;
+  padding: 0;
+  height: 80px;
+}
+
+.site-contact {
+  display: flex;
+  font-family: Roboto, sans-serif;
   text-decoration: none;
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -182,24 +191,37 @@ img {
   letter-spacing: 0.02em;
   padding: 0;
   margin-left: auto;
+  margin-bottom: 0;
   align-items: center;
-  height: 80px;
 }
 
-.site-contact .site-contact-item + .site-contact-item {
-  margin-left: 50px;
+.site-contact-item {
+  display: flex;
+  margin-right: 30px;
 }
+
+.site-contact-item:last-child {
+  margin-right: 0px;
+}
+
+/* .site-contact .site-contact-item + .site-contact-item {
+  margin-left: 50px;
+} */
 
 .site-contact:hover,
 .site-contant:focus {
   color: var(--accent-color);
 }
 
+/* .site-contact:hover .icon,
+.site-contant:focus .icon {
+  fill: var(--accent-color);
+} */
+
 .icon {
-  height: 80px;
   margin-right: 10px;
-  align-content: center;
   fill: currentColor;
+  height: 80px;
 }
 
 /* ---------------Стилизация ГЕРОЯ (БАНЕР)--------------- */
@@ -477,24 +499,49 @@ img {
 .customers {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
 }
 
-.icon-client {
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
+.customers-item {
   width: 170px;
   height: 92px;
-  align-items: center;
-  padding: 16px 32px;
-  fill: #afb1b8;
+  color: #757575;
 }
 
-.icon-client:hover {
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+
+.customer-link:hover,
+.customer-link:focus {
   fill: var(--accent-color);
+  border-radius: 4px;
   border: 1px solid var(--accent-color);
 }
 
+/* .customer-link:hover .customers-icon,
+.customer-link:focus .customers-icon {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+} */
+
+.customers-icon {
+  fill: currentColor;
+}
+
+/* .icon-client:hover,
+.icon-client:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+} */
 /* ------------Стилизация футера------------- */
 
 .list-footer {
@@ -591,7 +638,8 @@ img {
   justify-content: center;
 }
 
-.footer-links:hover {
+.footer-links:hover,
+.footer-links:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   /* height: 44px;
