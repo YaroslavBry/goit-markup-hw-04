@@ -9,10 +9,6 @@
   --background-color-lightgrey: #f5f4fa;
 }
 
-/* html {
-  box-sizing: border-box;
-} */
-
 *,
 *::before. *::after {
   box-sizing: inherit;
@@ -254,10 +250,6 @@ img {
 
 /* ----------------BENEFITS---------------- */
 
-/* .benefit {
-  margin-top: 94px;
-} */
-
 .benefit-list {
   margin: 0;
   list-style: none;
@@ -293,7 +285,7 @@ img {
 */
 
 .benefit-item {
-  max-width: 260px;
+  max-width: 270px;
 }
 
 .benefit-desctription {
@@ -313,7 +305,6 @@ img {
   background-color: var(--background-color-lightgrey);
   border-radius: 4px;
   margin-bottom: 30px;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70px 70px;
@@ -356,9 +347,8 @@ img {
   justify-content: center;
 }
 
-.icon-antena {
-  /* fill: #000000; */
-  /* align-content: center; */
+.section.benefit {
+  padding-bottom: 0px;
 }
 
 /* ----------------WHAT WE DO---------------- */
@@ -453,21 +443,29 @@ img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  color: rgb(255, 255, 255);
+  color: #afb1b8;
+  /* color: rgb(255, 255, 255); */
 }
 
 .team-link:hover,
 .team-link:focus {
   background-color: var(--accent-color);
-  fill: currentColor;
+  color: #ffffff;
 }
+
+/* .team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
+  fill: currentColor;
+} */
 
 .team-icon {
-  fill: #afb1b8;
-}
-
-.team-icon:hover {
-  fill: #ffffff;
+  /* fill: #afb1b8; */
+  fill: currentColor;
 }
 
 /* ------------Постойнные клиенты------------- */
